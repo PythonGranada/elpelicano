@@ -1,4 +1,6 @@
 Title: Ponentes
 Date: 2012-12-01 10:02
 
-dfdsfdsa
+Organizaciones y empresas que colaboran con nosotros para hacer Python Granada posible.
+
+
