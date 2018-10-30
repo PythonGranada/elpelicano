@@ -15,7 +15,7 @@ SITESUBTITLE = u'La comunidad dedicada a Python en Granada y alrededores'
 THEME = '{}/themes/MinimalXY'.format(CURRENT_DIR_PATH)
 NEST_CSS_MINIFY = True
 
-#MINIMALXY_FAVICON = 'favicon.ico'
+MINIMALXY_FAVICON = 'extra/favicon.ico'
 
 MINIMALXY_CURRENT_YEAR = 2018
 
