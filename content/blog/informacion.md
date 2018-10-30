@@ -1,5 +1,7 @@
 Title: Información
 Date: 2018-06-25 23:25
+Tags: pelican
+Summary: Hemos cambiado la manera en la que funciona nuestra web. Ahora usamos el generador Pelican. Acceptamos Pull Request con tu aportación en Github en formato Markdown.
 
 Hola! Hemos cambiado la manera en la que funciona nuestra web.
 Anteriormente usabamos Django, con la idea de poder crear extensiones
