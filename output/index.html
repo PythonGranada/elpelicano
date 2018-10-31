@@ -1,187 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-        <meta charset="utf-8" />
-        <title>python-granada</title>
-        <link rel="stylesheet" href="//python-granada.es/theme/css/main.css" />
-        <link href="//python-granada.es/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="python-granada Atom Feed" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-</head>
+    <title>Python Granada</title>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="//python-granada.es/">python-granada </a></h1>
-                <nav><ul>
-                    <li><a href="//python-granada.es/pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="//python-granada.es/pages/ponentes.html">Ponentes</a></li>
-                    <li><a href="//python-granada.es/category/articulos.html">articulos</a></li>
-                    <li><a href="//python-granada.es/category/pydays.html">PyDays</a></li>
-                    <li><a href="//python-granada.es/category/quedadas.html">Quedadas</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+    <!-- Meta -->
+    <meta name="description" content="Python Granada &ndash; La comunidad dedicada a Python en Granada y alrededores">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="//python-granada.es/ejemplo-de-articulo.html">ejemplo de artículo</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2012-12-01T10:02:00+01:00">
-                Published: Sat 01 December 2012
-        </abbr>
+    <!-- Social -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Python Granada"/>
+    <meta property="og:description" content="La comunidad dedicada a Python en Granada y alrededores"/>
+    <meta property="og:site_name" content="Python Granada" />
+    <meta property="og:url" content="."/>
+    <meta property="og:image" content=""/>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="//python-granada.es/author/python-granada.html">Python Granada</a>
-        </address>
-<p>In <a href="//python-granada.es/category/articulos.html">articulos</a>.</p>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Python Granada">
+    <meta name="twitter:description" content="La comunidad dedicada a Python en Granada y alrededores">
+    <meta name="twitter:url" content=".">
+    <meta name="twitter:image" content="">
 
-</footer><!-- /.post-info --><p>Esto es un artículo super guay</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+    <!-- Feed -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="//python-granada.es/jueves-10-mayo.html" rel="bookmark"
-                           title="Permalink to Jueves 10 Mayo">Jueves 10 Mayo</a></h1>
-                </header>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="./theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="./theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./theme/css/pygments-highlight-github.css">
+    
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-12-01T10:02:00+01:00">
-                Published: Sat 01 December 2012
-        </abbr>
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./extra/favicon.ico">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="//python-granada.es/author/python-granada.html">Python Granada</a>
-        </address>
-<p>In <a href="//python-granada.es/category/quedadas.html">Quedadas</a>.</p>
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./theme/js/jqcloud.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+  </head>
 
-</footer><!-- /.post-info -->                <p>Esto es un artículo super guay</p>
-                <a class="readmore" href="//python-granada.es/jueves-10-mayo.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="//python-granada.es/jueves-3-mayo-18.html" rel="bookmark"
-                           title="Permalink to Jueves 3 Mayo 18">Jueves 3 Mayo 18</a></h1>
-                </header>
+        <a href="." id="header-logo" title="Home">
+            <img class="mr20" width="50px"  src="./images/logo.png" alt="logo">
+        </a>
+        <nav id="header-menu">
+          <ul>
+            <li><a href="./pages/colaboradores.html">Colaboradores</a></li>
+            <li><a href="./pages/comunidad.html">Comunidad</a></li>
+            <li><a href="./pages/informacion.html">Información</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-12-01T10:02:00+01:00">
-                Published: Sat 01 December 2012
-        </abbr>
+    <div class="w3-row" 
+    style="background: url('./images/header.png'); background-repeat: no-repeat; height: 320px; background-position: center; background-size: 100%; ">
+      <aside id="intro" class="w3-container w3-center w3-padding-32">
+        <div>
+          <span id="intro-description"></span>
+          <ul class="social" style="margin: 0; margin-top: 10px; padding: 0;">
+            <li><a class="sc-@python_granada" href="https://twitter.com/python_granada" target="_blank"><i class="fa fa-@python_granada"></i></a></li>
+            <li><a class="sc-Grupo de Telegram" href="https://telegram.me/pythongranada" target="_blank"><i class="fa fa-Grupo de Telegram"></i></a></li>
+          </ul>
+        </div>
+        <div style="line-height: 180px;">
+        </div>
+      </aside>
+    </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="//python-granada.es/author/python-granada.html">Python Granada</a>
-        </address>
-<p>In <a href="//python-granada.es/category/quedadas.html">Quedadas</a>.</p>
+    <br><br><br>
 
-</footer><!-- /.post-info -->                <p>Esto es un artículo super guay</p>
-                <a class="readmore" href="//python-granada.es/jueves-3-mayo-18.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+    <section id="listing">
+      <article class="w3-container w3-card-2 w3-white col-main">
+        <header>
+          <h2><a href="./informacion.html">Información</a></h2>
+          <div class="post-info">
+            <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+              <span><time datetime="2018-06-25T23:25:00+02:00">lun 25 junio 2018</time> in <a href="./category/blog.html" title="All articles in category blog">blog</a></span>
+            </div>
+            <div class="w3-margin-right">
+              <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+                <a href="./tag/pelican.html" title="All articles with Pelican tag">#pelican</a>
+              </span>
+            </div>
+          </div>
+        </header>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="//python-granada.es/nice-article.html" rel="bookmark"
-                           title="Permalink to nice article">nice article</a></h1>
-                </header>
+        <div class="entry-content">
+          Hemos cambiado la manera en la que funciona nuestra web. Ahora usamos el generador Pelican. Acceptamos Pull Request con tu aportación en Github en formato Markdown.
+        </div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-12-01T10:02:00+01:00">
-                Published: Sat 01 December 2012
-        </abbr>
+        <footer>
+          <a class="w3-btn w3-green w3-right" href="./informacion.html">Leer &#10093;</a>
+        </footer>
+      </article>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="//python-granada.es/author/python-granada.html">Python Granada</a>
-        </address>
-<p>In <a href="//python-granada.es/category/articulos.html">articulos</a>.</p>
+      <br><br><br>
 
-</footer><!-- /.post-info -->                <p>Esto es un artículo super guay</p>
-                <a class="readmore" href="//python-granada.es/nice-article.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="//python-granada.es/pyday1.html" rel="bookmark"
-                           title="Permalink to PyDay1">PyDay1</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-12-01T10:02:00+01:00">
-                Published: Sat 01 December 2012
-        </abbr>
+    </section>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="//python-granada.es/author/python-granada.html">Python Granada</a>
-        </address>
-<p>In <a href="//python-granada.es/category/pydays.html">PyDays</a>.</p>
 
-</footer><!-- /.post-info -->                <p>Esto es un artículo super guay</p>
-                <a class="readmore" href="//python-granada.es/pyday1.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>&copy; 2018 Python Granada </span>
+      </div>
+    </footer>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="//python-granada.es/pyday2.html" rel="bookmark"
-                           title="Permalink to PyDay2">PyDay2</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-12-01T10:02:00+01:00">
-                Published: Sat 01 December 2012
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="//python-granada.es/author/python-granada.html">Python Granada</a>
-        </address>
-<p>In <a href="//python-granada.es/category/pydays.html">PyDays</a>.</p>
-
-</footer><!-- /.post-info -->                <p>Esto es un artículo super guay</p>
-                <a class="readmore" href="//python-granada.es/pyday2.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://www.es.python.org/">Python España</a></li>
-                            <li><a href="https://2018.es.pycon.org/">PyCon18 Málaga</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="//python-granada.es/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="https://twitter.com/python_granada">@python_granada</a></li>
-                            <li><a href="https://telegram.me/pythongranada">Grupo de Telegram</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-</body>
+  </body>
 </html>
